@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "640a0509-417b-47b2-9eee-ec2a1ead6313",
+		"name": "soap-incidents",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/ping",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[SOAP] GetIncident",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n        <GetIncident xmlns=\"http://localhost:8000/\">\r\n            <ID>500</ID>\r\n        </GetIncident>\r\n    </soap:Body>\r\n</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/IncidentService",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"IncidentService"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[SOAP] CreateOrUpdateIncident",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n        <CreateOrUpdateIncident xmlns=\"http://localhost:8000/\">\r\n            <ID>1</ID>\r\n            <Title>SUPER URGENT!!</Title>\r\n        </CreateOrUpdateIncident>\r\n    </soap:Body>\r\n</soap:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/IncidentService",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"IncidentService"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

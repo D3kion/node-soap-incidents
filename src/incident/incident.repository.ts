@@ -19,14 +19,14 @@ export const seedIncidents = () => {
 
 export const findIncidentById = ({ ID }: IGetIncidentReq, cb: (data: IIncident | null) => void) => {
   db.findOne({ ID }, (err, doc) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
+    if (err) { console.error(err); return }
     cb(doc)
   });
 }
 
 export const createOrUpdateIncident = (data: IIncident, cb: (data: IIncident) => void) => {
-  // TODO
+  db.update({ ID: data.ID }, data, { upsert: true }, err => {
+    if (err) { console.error(err); return }
+    findIncidentById({ ID: data.ID }, data => cb(data!))
+  })
 }
