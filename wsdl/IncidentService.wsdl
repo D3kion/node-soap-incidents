@@ -18,8 +18,14 @@
       <xsd:element name="Incident">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element name="ID" type="xsd:string" minOccurs="0"/>
-            <xsd:element name="Title" type="xsd:string"/>
+            <xsd:element name="ID" type="xsd:integer"/>
+            <xsd:element name="DATEBEGIN" type="xsd:datetime"/>
+            <xsd:element name="REPORTDATE" type="xsd:datetime"/>
+            <xsd:element name="TARGETFINISH" type="xsd:datetime"/>
+            <xsd:element name="CRITIC_LEVEL" type="xsd:integer"/>
+            <xsd:element name="OBJ_OSN_ID" type="xsd:string"/>
+            <xsd:element name="ASUSH_ID" type="xsd:string"/>
+            <xsd:element name="OBJ_KOD" type="xsd:string"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
@@ -27,7 +33,7 @@
       <xsd:element name="GetIncident">
         <xsd:complexType>
           <xsd:sequence>
-            <xsd:element name="ID" type="xsd:string"/>
+            <xsd:element name="ID" type="xsd:integer"/>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>

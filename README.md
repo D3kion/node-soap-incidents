@@ -1,7 +1,8 @@
 ## Node Incidents SOAP Service
 
-Start server: `npm run dev`
-Start server(prod): `npm run build && npm start`
+1. Install dependencies: `npm install`
+2. Start server: `npm run dev`
+3. Start server (prod): `npm run build && npm start`
 
 ### Postman collection
 

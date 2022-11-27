@@ -30,7 +30,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n        <GetIncident xmlns=\"http://localhost:8000/\">\r\n            <ID>500</ID>\r\n        </GetIncident>\r\n    </soap:Body>\r\n</soap:Envelope>",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n        <GetIncident xmlns=\"http://localhost:8000/\">\r\n            <ID>1</ID>\r\n        </GetIncident>\r\n    </soap:Body>\r\n</soap:Envelope>",
 					"options": {
 						"raw": {
 							"language": "xml"
@@ -57,7 +57,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n        <CreateOrUpdateIncident xmlns=\"http://localhost:8000/\">\r\n            <ID>1</ID>\r\n            <Title>SUPER URGENT!!</Title>\r\n        </CreateOrUpdateIncident>\r\n    </soap:Body>\r\n</soap:Envelope>",
+					"raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <soap:Body>\r\n        <CreateOrUpdateIncident xmlns=\"http://localhost:8000/\">\r\n            <ID>1</ID>\r\n            <DATEBEGIN>2022-11-27T17:34:07.243Z</DATEBEGIN>\r\n            <REPORTDATE>2022-11-29T17:34:07.243Z</REPORTDATE>\r\n            <TARGETFINISH>2022-12-02T17:34:07.243Z</TARGETFINISH>\r\n            <CRITIC_LEVEL>2</CRITIC_LEVEL>\r\n            <OBJ_OSN_ID>TEST</OBJ_OSN_ID>\r\n            <ASUSH_ID>TEST</ASUSH_ID>\r\n            <OBJ_KOD>TEST</OBJ_KOD>\r\n        </CreateOrUpdateIncident>\r\n    </soap:Body>\r\n</soap:Envelope>",
 					"options": {
 						"raw": {
 							"language": "xml"
